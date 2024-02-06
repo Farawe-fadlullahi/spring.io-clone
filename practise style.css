@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outter{
+    background-color:#1b1f23 ;
+    width:100% ;
+    height: 90vh;
+}
+.inner{
+    background-color:rgb(20, 132, 218) ;
+    width:85% ;
+    height: 60vh;
+    position: relative;
+}
+.circle{
+    background-color:rgb(218, 20, 20) ;
+    width:600px ;
+    height: 600px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    left: -100px;
+    top: -130px;
+    overflow: hidden;
+    display: block;
+    rotate: 40deg;
+
+}
+aside[a]{
+    width:100%;
+    height: 300px;
+    background-color: purple;
+    position: absolute;
+
+}
+aside[b]{
+    bottom: 0;
+    width:50%;
+    height: 300px;
+    background-color: green;
+    position: absolute;
+
+}
+aside[b] nav{
+    bottom: 0;
+    width:100%;
+    height: 300px;
+    background-color: hotpink;
+    position: absolute;
+
+}
+.upper{
+        background-color:#889bad ;
+    width:100% ;
+    height: 90vh;
+    margin-bottom: 1000px;
+    position: absolute;
+    z-index: 2;
+}
+.semicircle{
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    z-index: 6;
+    background-color: aqua;
+    right: -300px;
+    top: -50px;
+    border-top-right-radius: 1000px;
+    border-top-left-radius: 1000px;
+    overflow: hidden;
+}
+div[aa]{
+    width:300px ;
+    height:250px ;
+    background-color: blueviolet;
+}
+
+.btn{
+    border: 3px solid hotpink;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 255, 0);
+}
+.button::before{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    background-color: rgb(223, 216, 216);
+    top: 0;
+    content: " ";
+    z-index: -1;
+    transition: all 2s ease;
+}
+.btn:hover .button::before{
+width: 100%;
+}
+.btn:hover p{
+    color: beige;
+}
+
+
+a{
+    color: #1484ecd7;
+    z-index: 1;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    text-decoration: none;
+    transition: all 5s linear;
+    
+
+}
+a::before{
+    /* background-color: #075eafea; */
+    content: ' ';
+    border-bottom: 3px solid green;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.5s linear;
+}
+
+a:hover::before{
+width: 100%;
+}
